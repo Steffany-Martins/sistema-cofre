@@ -45,7 +45,7 @@ Lucas Amaral - Engenharia Mecânica e de Armamento - IME-RJ
 
 Pedro Grisolia - Ciência da Computação - UERJ
 
-Steffany Soares - Tec. Informática - CEFET-RJ
+Steffany Soares - Técnico de Informática - CEFET-RJ
 
 
 
