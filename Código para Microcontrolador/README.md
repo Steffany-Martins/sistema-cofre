@@ -1,0 +1,5 @@
+>Código assembly para microcontrolador ATMEGA16
+
+Um microcontrolador será implementado na caixa para gravar a senha e destravar a caixa após a inserção da senha pelo cliente. 
+
+Primeiro foi configurado as entradas e saídas do micro, definindo uma velocidade de processamento. Após isso, os registros R16 e R17 são abertos, sendo que o R16 grava a senha gerada pelo plugin, envia um sinal para um motor de passo que rotaciona a borboleta para travar a caixa e o R17 recebe a senha digitada pelo cliente na hora do recebimento da encomenda. O código compara as duas senhas registradas, e, caso sejam diferentes, ele solicita uma nova senha para o R17. Caso as senhas sejam iguais, o microcontrolador envia um sinal para um motor de passo que rotaciona em 90 graus a borboleta do sistema de trava. Ao girar, ela traz as travas para dentro da tampa, destravando a caixa.
