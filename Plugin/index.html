@@ -1,18 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Sistema COFRE</title>
-    </head>
-    <body>
+
+<head>
+    <!--Metas-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <!--closed metas-->
+    <!--Link style-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--Link style closed-->
+    <!-- Bootstrap início -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap fim -->
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--Font Awesome closed-->
+    <!--Gerator-->
+    <script type="text/javascript" src="js/geradorDeSenhas.js"></script>
+    <script type="text/javascript" src="js/geraEmail.js"></script>
+    <!--Gerator closed-->
+    <title>Sistema COFRE</title>
+</head>
+
+<body>
+
+    <header class="logo" title="Sistema Cofre logo">
+        <img id="logo" alt="Sistema Cofre" src="img/logoCofre.png"><img>
+    </header>
+    <div class="container">
+        <p>Faça parte da revolução!</p>
+
+        <div class="row">
+            <div class="col mb-5">
+                <form class="form">
+                    <input id="email" class="email" placeholder="Insira o email do usuário" value="" type="email" />
+                    <input id="button" class="btn btn-primary" type="button" onclick="geraEmail.geraMensagem()"
+                        value="Enviar senha" />
+
+                </form>
+            </div>
         </div>
-        <img id="logo" src="img/logoCofre.png"><img>
-        <input id="email" placeholder="Insira o email do usuário" value="" type="email" />
-        <input type="button" onclick="geraEmail.geraMensagem()" value="Gerar e enviar senha"/>
-        <script type="text/javascript" src="js/geradorDeSenhas.js"></script>
-        <script type="text/javascript" src="js/geraEmail.js"></script>
-    </body>
+        <!--Modal-->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-success" id="title"><i class="fas fa-key"></i> Senha gerada</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true" data-dismiss="modal">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="subtitle">Não compartilhe essa senha!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class=" btn btn-primary" data-dismiss="modal" id="desfazer">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal closed-->
+        <!--Modal-->
+        <div class="modal fade" id="modalError" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-danger" id="title"><i class="fas fa-key"></i> ERRO ao gerar senha
+                        </h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true" data-dismiss="modal">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center" id="subtitle">Tente novamente</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal" id="desfazer">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal closed-->
+    </div>
+    <!--Footer-->
+    <footer>
+        <!--Copyright-->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://github.com/pedromg19/Sistema-COFRE">Sistema Cofre</a>
+        </div>
+        <!--Copyright-->
+    </footer>
+    <!--Footer-->
+
+</body>
+
 </html>
