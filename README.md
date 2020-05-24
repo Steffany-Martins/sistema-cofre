@@ -5,7 +5,7 @@
 
 #### Apresentação 
 
-Use essa seção para falar sobre as motivações de seu time e, de forma breve, qual o produto que estão trabalhando. Se possível forneça **o que** seu produto é, por exemplo: Um app, uma aplicação web, gadget, dentre outros.
+Nessa época de pandemia, os serviços de delivery passaram a ser essenciais. Porém, devido a problemas de segurança e higiene, a insatisfação dos consumidores aumentou bastante, segundo pesquisas. Sendo assim, desenvolvemos uma caixa, que será muito mais higiênica do que o que se usa atualmente, e um plugin para ser acoplado aos aplicativos de delivery, que trará uma camada extra de segurança através de um sistema de senhas.
 
 #### O Produto
 
