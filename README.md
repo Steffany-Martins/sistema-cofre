@@ -20,19 +20,19 @@ A senha de abertura é gerada por um plugin que será implementado para os aplic
 #### Informações adicionais 
 
 #### Renderizações do Cofre
-<img src="Renders do Cofre/Render Topo.png">
+<img src="Renders do Cofre/Caixa.png">
 
-##### Sem o DPAD:
-<img src="Renders do Cofre/Render sem Dpad.png">
 
 ##### Sem tampa:
-<img src="Renders do Cofre/Render sem Tampa.png">
+<img src="Renders do Cofre/Caixa-sem-tampa.png">
+<img src="Renders do Cofre/Caixa-sem-tampa-corte.png">
+
 
 ##### Sistema de travas:
-<img src="Renders do Cofre/Render Trava 1.png">
-<img src="Renders do Cofre/Render Trava 2.png">
-<img src="Renders do Cofre/Render Trava 3.png">
-<img src="Renders do Cofre/Render Trava 4.png">
+<img src="Renders do Cofre/Tampa-Trava.png">
+<img src="Renders do Cofre/Tampa-Trava2.png">
+<img src="Renders do Cofre/Trava-Aberta.png">
+<img src="Renders do Cofre/Trava-Travada.png">
 
 
 
