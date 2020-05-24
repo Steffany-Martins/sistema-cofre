@@ -1,9 +1,11 @@
 var geraEmail = {
     geraMensagem: function () {
-
         var email = document.getElementById('email').value.toString();
-
-        if (email == undefined || email == '' || email == null) {
+        var validaEmail = function(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+        if (validaEmail(email) == false) {
             return $('#modalError').modal('show')
         } else {
 
